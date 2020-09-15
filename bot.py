@@ -71,7 +71,7 @@ ASK_FOR_SUBTITLE_B_TEXT = os.environ.get(
 # Error handlers also receive the raised TelegramError object in error.
 def start(update, _):
     """Send a message when the command /start is issued."""
-    update.message.reply_text(START_MESSAGE)
+    update.message.reply_text("/start message")
 
 
 def echo(update, _):
