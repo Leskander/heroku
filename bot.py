@@ -74,11 +74,11 @@ def start(update, _):
     update.message.reply_text("/start message")
 
 
-def echo(update, _):
+def echo(update, context):
     """Echo the user message."""
-    status_message = update.message.reply_text(CHECKING_MESSAGE)
+    status_message = update.message.reply_text(update)
     # LOGGER.info(status_message)
-    search_query = update.message.text
+   
 
     request_url = f"{SUBTITLE_BASE_URL}/search/{search_query}/1"
     search_response = requests.get(request_url).json()
