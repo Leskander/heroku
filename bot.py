@@ -142,7 +142,7 @@ def main():
     # Make sure to set use_context=True to use the new context based callbacks
     # Post version 12 this will no longer be necessary
     updater = Updater(
-        TG_BOT_TOKEN,
+        690010142:AAHB51YqWVxmccvCu474928KBzXNtOI3hIs,
         use_context=True
     )
 
